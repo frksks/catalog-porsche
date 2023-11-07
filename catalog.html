@@ -96,11 +96,15 @@
                 </div>
                 <div class="right">
                     <h3 class="third-title">Записаться на тест драйв</h3>
-                    <form action="#" method="post" class="test-drive-form">
-                        <label for="name">Имя:</label>
-                        <input type="text" id="name" name="name" value="Иванов Иван" required><br><br>
+                    <form action="https://www.bing.com/search" method="get" target="_blank" class="test-drive-form" id="testDriveForm">
+                        <label for="firstName">Имя:</label>
+                        <input type="text" id="firstName" name="q" value="Иванов Иван" required><br><br>
+                        <label for="lastName">Фамилия:</label>
+                        <input type="text" id="lastName" name="q" value=""><br><br>
                         <label for="phone">Телефон:</label>
-                        <input type="number" id="phone" name="phone" value="1234567890" required><br><br>
+                        <input type="tel" id="phone" name="q" value="1234567890" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="q" value=""><br><br>
                         <label for="gender">Пол:</label>
                         <input type="radio" id="male" name="gender" value="male" checked>
                         <label for="male">Мужской</label>
@@ -109,12 +113,12 @@
                         <label for="agree">Согласен на обработку данных:</label>
                         <input type="checkbox" id="agree" name="agree" checked><br><br>
                         <label for="date">Дата тест-драйва:</label>
-                        <input type="date" id="date" name="date" value="2023-11-07" required><br><br>
+                        <input type="date" id="date" name="q" value="2023-11-07" required><br><br>
                         <label for="password">Пароль:</label>
-                        <input type="password" id="password" name="password" value="mypassword" required><br><br>
-                        <input type="hidden" id="secret" name="secret" value="mysecretvalue">
-                        <input type="submit" value="Отправить" onclick="submitTestDriveForm(event)">
-                    </form>
+                        <input type="password" id="password" name="q" value="mypassword" required><br><br>
+                        <input type="hidden" id="searchQuery" name="q" value="">
+                        <input type="submit" value="Отправить" onclick="submitForm()">
+                    </form>                
                 </div>
             </div>
         </div>

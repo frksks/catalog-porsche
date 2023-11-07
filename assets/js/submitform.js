@@ -5,14 +5,10 @@ function submitForm() {
     let email = document.getElementById('email').value;
 
     if (firstName && lastName && phone && email) {
-        let formData = {
-            firstName: firstName,
-            lastName: lastName,
-            phone: phone,
-            email: email
-        };
-        console.log(formData);
-        alert("Заявка успешно отправлена.");
+        let searchQuery = `${firstName}+${lastName}+${phone}+${email}`;
+        document.getElementById('searchQuery').value = searchQuery;
+        let form = document.getElementById('contactForm');
+        form.submit();
     } else {
         alert("Заполните все поля");
     }

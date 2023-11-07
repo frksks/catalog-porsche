@@ -1,24 +1,18 @@
-const submitTestDriveForm = (event) => {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const gender = document.querySelector('input[name="gender"]:checked').value;
-    const agree = document.getElementById('agree').checked;
-    const date = document.getElementById('date').value;
-    const password = document.getElementById('password').value;
+function submitForm(event) {
+    let firstName = document.getElementById('firstName').value;
+    let lastName = document.getElementById('lastName').value;
+    let phone = document.getElementById('phone').value;
+    let email = document.getElementById('email').value;
+    let gender = document.querySelector('input[name="gender"]:checked').value;
+    let agree = document.getElementById('agree').checked;
+    let date = document.getElementById('date').value;
+    let password = document.getElementById('password').value;
 
-    if (name && phone && gender && agree && date && password) {
-        const formData = {
-            name,
-            phone,
-            gender,
-            agree,
-            date,
-            password
-        };
-        console.log(formData);
-        alert("Заявка успешно отправлена.");
+    if (firstName && phone) {
+        let searchQuery = `?q=${firstName}+${lastName}+${phone}+${email}+${gender}+${agree}+${date}+${password}`;
+        let url = document.getElementById('testDriveForm').action + searchQuery;
+        window.location.href = url;
     } else {
-        alert("Заполните все поля");
+        alert("Заполните все обязательные поля");
     }
-};
+}

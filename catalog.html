@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Каталог </title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navigation">
+            <a href="./index.html" class="logo"><img src="./assets/img/logo.png" class="logo-img" alt="Логотип"></a>
+            <ul class="menu">
+                <li><a href="./index.html" class="menu-link">главная</a></li>
+                <li><a href="./catalog.html" class="menu-link active">каталог</a></li>
+                <li><a href="./about.html" class="menu-link">о нас</a></li>
+                <li><a href="./news.html" class="menu-link">новости</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="second-title">
+                Каталог
+            </h2>
+            <div class="catalog-box">
+                <div class="item-1">
+                    <a href="./car.html" class="cars-modal-link">
+                        <img src="./assets/img/car-1.png" alt="" class="car">
+                    </a>
+                    <h3 class="item-title">
+                        Porsche 911
+                    </h3>
+                </div>
+                <div class="item-1">
+                    <a href="./car.html" class="cars-modal-link">
+                        <img src="./assets/img/car-2.jpeg" alt="" class="car">
+                    </a>
+                    <h3 class="item-title">
+                        Porsche Cayenne
+                    </h3>
+                </div>
+                <div class="item-1">
+                    <a href="./car.html" class="cars-modal-link">
+                        <img src="./assets/img/car-5.jpeg" alt="" class="car">
+                    </a>
+                    <h3 class="item-title">
+                        Porsche 718 Boxster
+                    </h3>
+                </div>
+            </div>
+            <div class="catalog-box">
+                <div class="item-1">
+                    <a href="./car.html" class="cars-modal-link">
+                        <img src="./assets/img/car-4.png" alt="" class="car">
+                    </a>
+                    <h3 class="item-title">
+                        Porsche Macan
+                    </h3>
+                </div>
+                <div class="item-1">
+                    <a href="./car.html" class="cars-modal-link">
+                        <img src="./assets/img/car-6.jpeg" alt="" class="car">
+                    </a>
+                    <h3 class="item-title">
+                        Porsche 718 Cayman
+                    </h3>
+                </div>
+                <div class="item-1">
+                    <a href="./car.html" class="cars-modal-link">
+                        <img src="./assets/img/download.jpeg" alt="" class="car">
+                    </a>
+                    <h3 class="item-title">
+                        Porsche Panamera
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="test-drive">
+        <div class="container">
+            <h2 class="second-title">
+                Доступен тест драйв
+            </h2>
+            <div class="test-drive-box">
+                <div class="left">
+                    <h3 class="third-title">
+                        Porsche 356
+                    </h3>
+                    <a href="./assets/img/test-drive-img-1.jpeg" target="_blank">
+                        <img src="./assets/img/test-drive-img-1.jpeg" width="600px" height="400px" class="test-drive-img" alt="Автомобиль на тест драйв">
+                    </a>
+                    <a href="./assets/img/test-drive-img-1.jpeg" target="_blank" class="to-img-link">
+                        Посмотреть изображение
+                    </a>
+                </div>
+                <div class="right">
+                    <h3 class="third-title">Записаться на тест драйв</h3>
+                    <form action="#" method="post" class="test-drive-form">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" value="Иванов Иван" required><br><br>
+                        <label for="phone">Телефон:</label>
+                        <input type="number" id="phone" name="phone" value="1234567890" required><br><br>
+                        <label for="gender">Пол:</label>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Мужской</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Женский</label><br><br>
+                        <label for="agree">Согласен на обработку данных:</label>
+                        <input type="checkbox" id="agree" name="agree" checked><br><br>
+                        <label for="date">Дата тест-драйва:</label>
+                        <input type="date" id="date" name="date" value="2023-11-07" required><br><br>
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" value="mypassword" required><br><br>
+                        <input type="hidden" id="secret" name="secret" value="mysecretvalue">
+                        <input type="submit" value="Отправить" onclick="submitTestDriveForm(event)">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <img src="./assets/img/logo.png" class="logo">
+            <a href="https://www.porsche.ru/" target="_blank" class="porsche-link">Официальный сайт Porsche</a>
+        </div>
+    </footer>
+    <script src="./assets/js/submitformtwo.js"></script>
+</body>
+</html>

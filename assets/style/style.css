@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section{
+    padding-top: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-img{
+    max-width: 100px;
+    width: 100%;
+}
+
+.navigation{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu-link{
+    margin-right: 35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+
+
+
+.active, .menu-link:hover{
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.hero-title{
+    font-size: 64px;
+    color: #111;
+    font-weight: 700;
+}
+
+.hero-box{
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #111;
+}
+
+.catalog{
+    padding-top: 120px;
+}
+
+.img-1{
+    width: 100%;
+    max-width: 80%;
+}
+
+.second-title{
+    font-size: 4.2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #111;
+}
+
+.item-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-1{
+    margin-top: 25px;
+    width: 100%;
+    max-width: 33%;
+}
+
+.item-title{
+    font-size: 24px;
+    color: #111;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.catalog-box{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car{
+    max-width: 300px;
+}
+
+
+.catalog-link:hover{
+    opacity: 0.5;
+}
+.catalog-link{
+    padding: 50px;
+    margin-left: 10px;
+    text-align: center;
+    border: 1px solid #111;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 32px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.catalog-box-2{
+    display: flex;
+}
+
+.hero-link , .news-link{
+    display: inline-block;
+    padding: 18px 65px;
+    margin-top: 40px;
+    background-color: black;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.title-about{
+    text-align: left;
+}
+
+.car-size{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.about > .container{
+    text-align: center;
+}
+
+.car-info > .container > .flex > form{
+    max-width: 300px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #111;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    color: #111;
+    border: 1px solid #111;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    font-weight: bold;
+    color: #111;
+}
+
+.car-img{
+    max-width: 70%;
+}
+
+.ul, .ul-2{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 24px;
+    color: #111;
+}
+
+.ul, .ul-2 > li{
+    margin-top: 15px;
+}
+
+.flex{
+    display: flex;
+}
+
+.img-link{
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    display: inline-block;
+}
+
+.ul-2{
+    list-style-type:circle ;
+}
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    margin-top: 80px;
+}
+
+.footer > .container{
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 30%;
+}
+
+.porsche-link{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+ .about-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.about-table td {
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+.about-table img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+table {
+    background-image: url('https://img.freepik.com/free-photo/white-background_23-2147730801.jpg');
+    width: 100%;
+    border-collapse: collapse;
+    background-size: cover;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+}
+
+th, td {
+    border: 1px solid #111;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.cell-image {
+    width: 100px;
+    height: 100px;
+}
+
+.about{
+    color: #111;
+    padding-top: 160px;
+}
+
+.news-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.test-drive{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.test-drive-box{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-drive-form {
+    max-width: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.third-title{
+    font-size: 32px;
+    color: #111;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.to-img-link{
+    text-decoration: underline;
+    color: black;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.test-drive-img{
+    width: 100%;
+    max-width: 600px;
+    min-width: 600px;
+}

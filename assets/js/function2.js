@@ -1,31 +1,10 @@
-function changeToLatin() {
-    const elements = document.querySelectorAll('.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9');
-    elements.forEach((element) => {
-      const text = element.textContent;
-      const latinText = cyrillicToLatin(text);
-      element.textContent = latinText;
-    });
-  }
-  
-  function cyrillicToLatin(text) {
-    const cyrillicLetters = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
-    const latinLetters = [
-      'a', 'b', 'v', 'g', 'd', 'e', 'yo', 'zh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'kh', 'ts', 'ch', 'sh', 'shch', '', 'y', '', 'e', 'yu', 'ya'
-    ];
-  
-    const newText = text
-      .toLowerCase()
-      .split('')
-      .map((letter) => {
-        const index = cyrillicLetters.indexOf(letter);
-        if (index !== -1) {
-          return latinLetters[index];
-        } else {
-          return letter;
-        }
-      })
-      .join('');
-  
-    return newText.toUpperCase();
-  }
+const node_for_click = document.getElementById("for_click")
+function find_edit(){
+document.getElementsByTagName('div')[3].innerText='Shukina'
+document.getElementsByTagName('div')[4].innerText='Kseniya'
+document.getElementsByTagName('div')[5].innerText='Romanovna'
+document.getElementsByTagName('div')[8].innerText='Moscow'
+document.getElementsByTagName('div')[6].innerText='female'
+ }
+node_for_click.addEventListener("click",find_edit)
   
